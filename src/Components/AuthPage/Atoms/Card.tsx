@@ -1,6 +1,15 @@
 import React from 'react'
 
-const Card = ({img,price, offer, reward, p1, p2 }) => {
+interface CardProps{
+    img:string,
+    price:string, 
+    offer:string, 
+    reward:string, 
+    p1:string, 
+    p2:string
+}
+
+const Card:React.FC<CardProps> = ({img,price, offer, reward, p1, p2 }) => {
   return (
     <div className=' flex flex-col items-center'>
             <div className='flex flex-col items-center'>
