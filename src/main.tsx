@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { ClerkProvider } from '@clerk/clerk-react'
-import { ThemeProvider } from '@material-tailwind/react'
 import { app } from './firebaseConfig.ts'
 import AuthProvider from './Providers/AuthProvider.tsx'
 app

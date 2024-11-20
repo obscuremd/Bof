@@ -6,7 +6,7 @@ import { useAuth } from './Providers/AuthProvider'
 
 function App() {
 
-  const {authenticated, setAuthenticated} = useAuth()
+  const {authenticated} = useAuth()
 
   return (
     <div className='font-connections'>

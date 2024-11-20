@@ -16,10 +16,12 @@ const Login = () => {
     const { setAuthenticated} = useAuth()
     
     const Signup = async () => {
+        email
         setAuthenticated(true)
       };
     
       const Login = async () => {
+        password
         setAuthenticated(true)
       };
 
