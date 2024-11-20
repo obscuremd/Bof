@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
+import withMT from "@material-tailwind/react/utils/withMT";
+import daisyui from "daisyui"
 
 module.exports = withMT({
   content: [
@@ -9,12 +10,18 @@ module.exports = withMT({
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    daisyui: {
+      themes: ["light", "dark", "cupcake"]
+    },
+
     extend: {
       fontFamily: {
         connections: ['Connections', 'serif'],
         roboto: ['Roboto', 'serif'],
       },
-    },
+    }
   },
-  plugins: [],
+  plugins: [
+    daisyui
+  ],
 })

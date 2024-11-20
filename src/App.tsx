@@ -1,21 +1,21 @@
-import { Button } from '@material-tailwind/react'
 import './App.css'
 import './fonts.css'
-import Navbar from './Components/AuthPage/Navbar'
-import Logo from './Components/AuthPage/Logo'
-import LogoNav from './Components/AuthPage/LogoNav'
-import LoginSection from './Components/AuthPage/LoginSection'
+import Auth from './Pages/AuthPage/Auth'
+import Main from './Pages/MainPage/Main'
+import { useAuth } from './Providers/AuthProvider'
 
 function App() {
 
+  const {authenticated, setAuthenticated} = useAuth()
+
   return (
-    <div className='px-14 font-connections'>
-      <Navbar/>
-      <div className='px-24 flex flex-col gap-6 py-9'>
-        <Logo/>
-        <LogoNav/>
-        <LoginSection/>
-      </div>
+    <div className='font-connections'>
+      {
+        authenticated
+        ?<Main/>
+        :<Auth/>
+      }
+        
     </div>
   )
 }
