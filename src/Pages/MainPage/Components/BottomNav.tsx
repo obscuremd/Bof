@@ -1,5 +1,4 @@
 import { CoinsSwap, DataTransferCheck, DollarCircle, SendDollars } from 'iconoir-react';
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const BottomNav = () => {

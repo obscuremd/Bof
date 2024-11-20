@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { NavArrowDown } from 'iconoir-react'
 import { AnimatePresence, motion } from 'framer-motion';
 
 
@@ -20,7 +19,6 @@ interface Props {
 const List: React.FC<Props> =({title, data, date}) => {
 
   const transactions = data
-  const isMobile = window.innerWidth < 768
   const [active, setActive] = useState(false)
 
   return (
