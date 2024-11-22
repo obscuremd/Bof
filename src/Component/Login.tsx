@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Logo from '../assets/boa filled.png'
 import { IsMobile } from '../Exports/Constatants'
 import Card from './Card'
-import { useAuth } from '../Providers/GeneralProvider';
 
 
 const Login = () => {
@@ -13,16 +12,13 @@ const Login = () => {
     const [password, setPassword] = useState('')
 
     // const auth = getAuth();
-    const { setAuthenticated} = useAuth()
     
     const Signup = async () => {
         email
-        setAuthenticated(true)
       };
     
       const Login = async () => {
         password
-        setAuthenticated(true)
       };
 
   return (
