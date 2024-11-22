@@ -91,11 +91,12 @@ const Transfers = () => {
         {
             index === 2 &&
             <div className='h-[70vh] w-full flex flex-col justify-between'>
-                <div className='flex flex-col gap-2 items-center'>
-                    <CheckCircle className='text-3xl text-green-500'/>
+                <div className='flex flex-col gap-2 items-center justify-center'>
+                    <CheckCircle className='text-6xl text-green-500'/>
                     <p className='flex flex-col justify-center items-center text-xl font-bold'>Your Transfer Is Confirmed </p>
+                    <p className='flex flex-col justify-center items-center text-center text-md'>Your receipt has been successfully sent to your email. Thank you for choosing to bank with us.</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                {/* <div className='flex flex-col gap-2'>
                     <button className='p-3 rounded-xl border-blue-gray-200 border-[1px] flex justify-between'>
                         <p className='text-lg'>From:</p>
                         <div>
@@ -116,7 +117,7 @@ const Transfers = () => {
                             <p className='text-md'>${amount}</p>
                         </div>
                     </button>
-                </div>
+                </div> */}
                 <button onClick={done} className="btn btn-neutral">Done</button>
             </div>
         }
