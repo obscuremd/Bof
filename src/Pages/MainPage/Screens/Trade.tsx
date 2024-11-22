@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Disclosure Content
 const disclosureContent = `

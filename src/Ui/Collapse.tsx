@@ -7,7 +7,7 @@ interface CollapseProps {
     secondary:string
 }
 
-const Collapse:React.FC<CollapseProps> = ({primary1, primary2 , secondary}) => {
+const Collapse:React.FC<CollapseProps> = ({primary1, primary2 }) => {
   return (
     <div
         tabIndex={0}

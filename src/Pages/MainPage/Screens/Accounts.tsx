@@ -1,6 +1,5 @@
 import { transactions } from "../../../Exports/Constatants"
 import Collapse from "../../../Ui/Collapse"
-import Accordion from "../Components/AccountComponents/Accordion"
 import Hero from "../Components/AccountComponents/Hero"
 import List from "../Components/AccountComponents/Table"
 
