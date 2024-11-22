@@ -4,11 +4,12 @@ interface CardProps {
     image : string | React.ReactNode
     text : string
     prim_text ?: string
+    onClick ?: ()=>void
 }
 
-const Card:React.FC<CardProps> = ({image, text, prim_text}) => {
+const Card:React.FC<CardProps> = ({image, text, prim_text, onClick}) => {
   return (
-    <div className="card bg-base-100 w-[45%] md:w-52 flex shadow-xl">
+    <div onClick={onClick} className="card bg-base-100 w-[45%] md:w-52 flex shadow-xl">
         <figure className="px-2 pt-2">
           {
             typeof image === 'string'

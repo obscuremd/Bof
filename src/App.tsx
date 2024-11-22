@@ -1,20 +1,21 @@
+import { SignedIn, SignedOut } from '@clerk/clerk-react'
 import './App.css'
 import './fonts.css'
 import Auth from './Pages/AuthPage/Auth'
 import Main from './Pages/MainPage/Main'
-import { useAuth } from './Providers/AuthProvider'
+import { useAuth } from './Providers/GeneralProvider'
 
 function App() {
 
-  const {authenticated} = useAuth()
 
   return (
     <div className='font-connections'>
-      {
-        authenticated
-        ?<Main/>
-        :<Auth/>
-      }
+        {/* <SignedIn> */}
+          <Main/>
+        {/* </SignedIn>
+        <SignedOut>
+          <Auth/>
+        </SignedOut> */}
         
     </div>
   )

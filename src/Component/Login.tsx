@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Logo from '../assets/boa filled.png'
 import { IsMobile } from '../Exports/Constatants'
 import Card from './Card'
-import { useAuth } from '../Providers/AuthProvider';
+import { useAuth } from '../Providers/GeneralProvider';
 
 
 const Login = () => {

@@ -5,6 +5,8 @@ import PayTransfer from './Screens/PayTransfer'
 import DepositChecks from './Screens/DepositChecks'
 import Trade from './Screens/Trade'
 import Navbar from './Components/Navbar'
+import Transfers from './Screens/Transfers'
+import PayBills from './Screens/PayBills'
 
 const Main = () => {
   return (
@@ -16,6 +18,8 @@ const Main = () => {
               <Route path='/transfer' element={<PayTransfer/>}/>
               <Route path='/deposit-checks' element={<DepositChecks/>}/>
               <Route path='/trade' element={<Trade/>}/>
+              <Route path='/transfers' element={<Transfers/>}/>
+              <Route path='/bills' element={<PayBills/>}/>
           </Routes>
           <BottomNav/>
         </div>
