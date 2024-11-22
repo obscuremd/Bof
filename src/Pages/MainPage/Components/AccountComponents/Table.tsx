@@ -22,7 +22,7 @@ const List: React.FC<Props> =({title, data, date}) => {
   const [active, setActive] = useState(false)
 
   return (
-    <div className={` md:py-7 p-3 md:px-5 rounded-3xl flex flex-col gap-7 w-full`}>
+    <div className={` md:py-7 p-3 md:px-5 rounded-3xl flex flex-col gap-7 w-full `}>
       <div onClick={()=>setActive(!active)} className='flex items-center justify-between'>
         <p style={{fontSize:"1.2rem", fontWeight:'bold'}}>{title}</p>
       </div>
@@ -31,7 +31,7 @@ const List: React.FC<Props> =({title, data, date}) => {
       <AnimatePresence>
         {
           transactions && transactions.map((item, index)=>(
-          <motion.div initial={{y:-20}} animate={{y:0}} exit={{y:-20}} key={index} style={{fontSize:"0.8rem"}} className={` py-2 px-4 rounded-xl flex justify-between w-full items-center`}>
+          <motion.div initial={{y:-20}} animate={{y:0}} exit={{y:-20}} key={index} style={{fontSize:"0.8rem"}} className={` py-2 px-4 rounded-xl flex justify-between w-full items-center border-[1px] border-blue-gray-900`}>
             <div className={` p-2 rounded-full inline-flex justify-center`}>{item.icon}</div>
             <p>{item.name}</p>
             {date && <p className='opacity-50'>{item.date}</p>}
