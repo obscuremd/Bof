@@ -9,7 +9,7 @@ const Accounts = () => {
     <div className="w-full flex flex-col gap-10">
       <Hero/>
       {/* <Accordion/> */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 p-2">
         <Collapse primary1="Banking" primary2="$4,900.00" secondary="$4,900.00"/>
         <Collapse primary1="Credit Cards" primary2="$4,900.00" secondary="$4,900.00"/>
         <Collapse primary1="Loans" primary2="$4,900.00" secondary="$4,900.00"/>
