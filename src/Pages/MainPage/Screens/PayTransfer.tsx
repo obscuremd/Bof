@@ -1,7 +1,7 @@
 import { DollarCircle, Internet, SendDollars } from "iconoir-react"
 import Card from "../../../Component/Card"
 import { transactions } from "../../../Exports/Constatants"
-import List from "../Components/AccountComponents/Table"
+import List from "../Components/AccountComponents/List"
 import { useNavigate } from "react-router-dom"
 
 const PayTransfer = () => {
@@ -20,6 +20,7 @@ const PayTransfer = () => {
                                 
                             <Card 
                               prim_text="Wire"
+                              onClick={()=>navigate('/wire')}
                               image={<Internet className="text-[30px]"/>} 
                               text={'U.S. or international'}/>
                             </div>
@@ -31,9 +32,10 @@ const PayTransfer = () => {
                                   text={'Pay now or schedule'}/>
                                 
                                   <Card 
-                                  prim_text="Zelle"
-                                  image={"https://firstcu.net/wp-content/uploads/2022/11/zelle-logo.png"} 
-                                  text={'Send and Request'}/>
+                                    onClick={()=>navigate('/zelle')}
+                                    prim_text="Zelle"
+                                    image={"https://firstcu.net/wp-content/uploads/2022/11/zelle-logo.png"} 
+                                    text={'Send and Request'}/>
                             </div>
       </div>
       <List data={transactions} date={true} title={"Activity"} />

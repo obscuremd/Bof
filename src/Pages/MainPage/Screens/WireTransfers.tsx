@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const PayBills = () => {
+const WireTransfers = () => {
 
     const [p, setP] = useState(0)
 
@@ -26,7 +26,7 @@ const PayBills = () => {
         :
         (
             <div>
-                <p>You have not yet provided the billing cycles.</p>
+                <p>Your account is not yet capable of wire transfers.</p>
                 <p>You are being redirected home.</p>
             </div>
         )}
@@ -34,4 +34,4 @@ const PayBills = () => {
   )
 }
 
-export default PayBills
+export default WireTransfers

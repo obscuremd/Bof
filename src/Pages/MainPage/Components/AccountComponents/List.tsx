@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 
 interface Transaction {
-  icon: JSX.Element;
   name: string;
   date?: string;
   amount: string;
@@ -32,10 +31,9 @@ const List: React.FC<Props> =({title, data, date}) => {
         {
           transactions && transactions.map((item, index)=>(
           <motion.div initial={{y:-20}} animate={{y:0}} exit={{y:-20}} key={index} style={{fontSize:"0.8rem"}} className={` py-2 px-4 rounded-xl flex justify-between w-full items-center border-[1px] border-blue-gray-900`}>
-            <div className={` p-2 rounded-full inline-flex justify-center`}>{item.icon}</div>
-            <p>{item.name}</p>
+            <p className='py-2 w-[50%]'>{item.name}</p>
             {date && <p className='opacity-50'>{item.date}</p>}
-            <p style={{color:item.type?'#C2E7B1':'#A13334'}}>{item.amount}</p>
+            <p style={{color:item.type?'#C2E7B1':'#A13334'}}>${item.amount}</p>
           </motion.div>
         ))}
       </AnimatePresence>

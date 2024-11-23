@@ -1,7 +1,7 @@
 import { transactions } from "../../../Exports/Constatants"
 import Collapse from "../../../Ui/Collapse"
 import Hero from "../Components/AccountComponents/Hero"
-import List from "../Components/AccountComponents/Table"
+import List from "../Components/AccountComponents/List"
 
 const Accounts = () => {
   return (
