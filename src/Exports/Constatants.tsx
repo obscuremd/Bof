@@ -1,4 +1,4 @@
-import { BitcoinCircle, Car, Cart, GraphUp, ReportsSolid } from "iconoir-react";
+import { Car, Cart, GraphUp, ReportsSolid } from "iconoir-react";
 
 export const IsMobile = window.innerWidth < 768;
 
